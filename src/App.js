@@ -15,7 +15,7 @@ function App() {
  const [todos, setTodos] =useState([])
 const namref = useRef()
 //i  am trying to make use of the useEffect function to stored the todo list to the local storage and make it to remain even after reloading the page
-// why is ttodo.complete as boolean trying to fustrate me whyyyyyy!!!
+// why is todo.complete as boolean is trying to fustrate me whyyyyyy!!!
 //come back to it
 useEffect(() =>{
   const storedTodos =JSON.parse(localStorage.getItem(LOCAL));
