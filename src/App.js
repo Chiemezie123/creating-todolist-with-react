@@ -1,6 +1,6 @@
 import React, {useState, useRef, useEffect} from "react";
 import Todolist from './TodoList'
-import uuid from 'uuid'
+
 
 
 //so the objective is to build a state where vales would be stored inside, and the state can render those values and rerender them with a function
@@ -35,7 +35,7 @@ function togtodo (name){
 
  function handleAdding(e){
     const name= namref.current.value;
-    if(name == '') return;
+    if(name === '') return;
     // console.log(goodnews)
     setTodos(prevTodos =>{
       return[...prevTodos, { name:name, complete:false}]
